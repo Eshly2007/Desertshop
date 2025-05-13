@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        .box{ 
+            width: 100px;
+            height: 100px;
+            background-color: palevioletred;
+            color: white;
+            font-size: 20px;
+            
+         }
+         .container{
+            display: flex;
+            grid-template-columns: 100px 100px 100px;
+            gap: 30px;
+        
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+         }
+ @media only screen and (max-width:700px){
+    .container{ 
+        flex-direction: column;
+    }
+
+ }
+    
+ @media only screen and (max-width:400px){
+    .box{ 
+        background-color: tomato;
+    }
+    
+ }
+    
+ </style>
+
+<body>
+
+<div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        
+</body>
+</html>
